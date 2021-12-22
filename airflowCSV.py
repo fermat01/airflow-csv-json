@@ -10,7 +10,7 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_PATH = '/<YOUR PATH >/geo_data.csv'
+DATA_PATH = '/<YOUR PATH >/customer_data.csv'
 
 
 def csvToJson():
