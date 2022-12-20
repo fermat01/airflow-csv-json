@@ -3,4 +3,4 @@ Building a simple  CSV to a JSON data pipeline
 
 
 
-<img src="airflow-csv-json/graph.png"/>
+![airflow-csv-json/graph.png](https://github.com/fermat01/airflow-csv-json/blob/main/graph.png)
