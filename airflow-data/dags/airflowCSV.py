@@ -10,7 +10,7 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_PATH = 'airflow-data/customer_data.csv'
+DATA_PATH = '/airflow-data/customer_data.csv'
 
 
 
@@ -18,7 +18,7 @@ def csvToJson():
     df=pd.read_csv(DATA_PATH)
     for i,rw in df.iterrows():
         print({'first_name':rw['firstName'],'last_name': rw['lastName'], 'job': rw['Job']})
-    df.to_json('/<YOUR PATH >/fromAirflow.json',orient='records')
+    df.to_json('/airflow-data/fromAirflow.json',orient='records')
 
 
 
